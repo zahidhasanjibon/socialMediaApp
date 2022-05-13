@@ -1,0 +1,82 @@
+.home {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  height: 100vh;
+}
+
+.homeleft {
+  background-image: linear-gradient(to right, #efebd4, #efefef);
+
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vmax;
+  box-sizing: border-box;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #e0e1e0 #fff5f5;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #fff5f5;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #e0e1e0;
+  border-radius: 10px;
+  border: 3px solid #fafafa;
+}
+
+/* .homeleft::-webkit-scrollbar {
+  display: none;
+}
+.homeleft {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+} */
+.homeright {
+  padding: 2vmax;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.homeUser {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.507);
+  transition: all 0.5s;
+}
+.homeUser > img {
+  height: 3vmax;
+  width: 3vmax;
+  margin: 1vmax;
+  border-radius: 100%;
+  border: 3px solid rgb(255, 201, 201);
+}
+
+.homeUser:hover {
+  transform: translateY(-10px);
+}
+
+@media screen and (max-width: 600px) {
+  .home {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .homeleft {
+    padding: 0;
+    min-height: 90vh;
+  }
+}
