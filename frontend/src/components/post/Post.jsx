@@ -1,5 +1,5 @@
 /* eslint-disable no-underscore-dangle */
-/* eslint-disable prettier/prettier */
+
 import {
   ChatBubbleOutline,
   DeleteOutline,
