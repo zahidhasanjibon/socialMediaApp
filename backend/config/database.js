@@ -7,7 +7,7 @@ const connectMongodb = () => {
             useUnifiedTopology: true,
             family: 4,
         })
-        .then((con) => console.log(`Database Connected : ${con.connection.host}`))
+        .then((con) => console.log(`Database Connected with: ${con.connection.host}`))
         .catch((err) => {
             console.log(err);
         });
